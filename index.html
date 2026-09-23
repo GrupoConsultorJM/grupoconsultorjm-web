@@ -5,14 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Grupo Consultor JM</title>
 
-  <meta http-equiv="refresh" content="0; url=https://grupoconsultorjm.com/">
-
   <script>
-    window.location.replace("https://grupoconsultorjm.com/");
+    const ruta = window.location.pathname.replace(/\/+$/, "");
+
+    if (ruta === "/items-4/this-is-a-title-03") {
+      window.location.replace(
+        "https://grupoconsultorjm.com/terminos-y-condiciones/"
+      );
+    } else {
+      window.location.replace(
+        "https://grupoconsultorjm.com/"
+      );
+    }
   </script>
 </head>
 
 <body>
-  <p>Redirigiendo a Grupo Consultor JM...</p>
+  <p>Redirigiendo...</p>
 </body>
 </html>
