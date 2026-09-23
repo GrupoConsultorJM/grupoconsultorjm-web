@@ -6,17 +6,13 @@
   <title>Grupo Consultor JM</title>
 
   <script>
-    const ruta = window.location.pathname.replace(/\/+$/, "");
+    const destino =
+      "https://grupoconsultorjm.com" +
+      window.location.pathname +
+      window.location.search +
+      window.location.hash;
 
-    if (ruta === "/items-4/this-is-a-title-03") {
-      window.location.replace(
-        "https://grupoconsultorjm.com/terminos-y-condiciones/"
-      );
-    } else {
-      window.location.replace(
-        "https://grupoconsultorjm.com/"
-      );
-    }
+    window.location.replace(destino);
   </script>
 </head>
 
